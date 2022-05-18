@@ -33,6 +33,10 @@ app.get("/", (req, res) => {
 const breadsController = require("./controllers/breads_controller.js");
 app.use("/breads", breadsController);
 
+// Users
+const usersController = require("./controllers/user_controller.js");
+app.use("/users", usersController);
+
 // Bakers
 const bakersController = require("./controllers/bakers_controller.js");
 app.use("/bakers", bakersController);
