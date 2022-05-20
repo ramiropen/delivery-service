@@ -44,4 +44,15 @@ function User({ users }) {
         </Default>
     );
 }
+
+// // NEW
+// breads.get("/menu", (req, res) => {
+//     Baker.find().then((foundBakers) => {
+//       res.render("menu", {
+//         bakers: foundBakers,
+//       });
+//     });
+//   });
+
+  
 module.exports = User;
