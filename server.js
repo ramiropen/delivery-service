@@ -26,12 +26,23 @@ app.use(methodOverride("_method"));
 
 // ROUTES
 app.get("/", (req, res) => {
-  res.send("Welcome to an Awesome App about Breads");
+  res.
+  send("Welcome to an Awesome App about Breads");
 });
-
+// ROUTES FOR TESTING
+app.get("/login", (req, res) =>{
+  res.render('login')
+})
+app.get("/menu", (req, res) =>{
+  res.render('menu')
+})
 // Breads
 const breadsController = require("./controllers/breads_controller.js");
 app.use("/breads", breadsController);
+
+// Users
+const usersController = require("./controllers/user_controller.js");
+app.use("/users", usersController);
 
 // Bakers
 const bakersController = require("./controllers/bakers_controller.js");

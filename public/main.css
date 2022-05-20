@@ -15,9 +15,9 @@ h1 {
 }
 
 img {
-  width: 50%;
+  width: 100%;
   display: block;
-  margin: auto;
+  margin: 0;
 }
 footer{
   background-color: #FF3D00;

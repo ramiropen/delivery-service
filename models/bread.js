@@ -11,7 +11,7 @@ const breadSchema = new Schema({
   image: { type: String, default: "http://placehold.it/500x500.png" },
   baker: {
     type: Schema.Types.ObjectID,
-    ref: "Baker",
+    ref: "User",
   },
 });
 
