@@ -28,8 +28,4 @@ footer{
   text-align: center;
 }
 
-.restimage {
-  display: flex;
-  flex-direction: row;
-  padding: 1rem;
-}
+

@@ -53,6 +53,10 @@ app.use("/users", usersController);
 const bakersController = require("./controllers/bakers_controller.js");
 app.use("/bakers", bakersController);
 
+// Menus
+const menusController = require("./controllers/menus_controller.js");
+app.use("/menus", menusController);
+
 // 404 Page
 app.get("*", (req, res) => {
   res.send("404");

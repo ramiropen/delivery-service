@@ -4,6 +4,7 @@ const Default = require("./layouts/Default");
 function Login() {
   return (
     <Default>
+
       <h2>LOGIN TO VIEW RESTAURANTS</h2>
       <form action='' method='POST'>
         <label htmlFor='username'>Username:</label>
