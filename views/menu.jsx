@@ -5,10 +5,11 @@ import {Button} from 'react-bootstrap';
 
 
 
-function Menu() {
+function Menu({foundMenu}) {
   return (
     <Default>
-    <head>
+    {foundMenu.name}  
+    {/* <head>
     <link rel="stylesheet" href="/main.css" />
     </head>
     <h2>ADD FOOD TO THE CART</h2>
@@ -23,7 +24,7 @@ function Menu() {
         </Card.Text>
         <Button variant="primary">Add To Cart</Button>
       </Card.Body>
-    </Card>
+    </Card> */}
     </Default>
   );
 }

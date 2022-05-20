@@ -3,13 +3,12 @@ const menus = express.Router();
 const Menu = require("../models/menu.js");
 
 // SHOW
-menus.get("/:id", (req, res) => {
-  Menu.findById(req.params.id)
+menus.get("/menu/:name", (req, res) => {
+  Menu.find(req.params.name)
     .populate("menu")
     .then((foundMenu) => {
-      // console.log(baker);
-      // console.log(foundBread);
-      res.render("show", {
+      console.log(Menu);
+      res.render("menu", {
         menu: foundMenu,
       });
     })
