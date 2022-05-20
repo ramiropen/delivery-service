@@ -33,3 +33,5 @@ function Index({ breads, bakers, title }) {
 }
 
 module.exports = Index;
+
+
