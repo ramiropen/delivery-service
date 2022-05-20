@@ -50,7 +50,7 @@ const usersController = require("./controllers/user_controller.js");
 app.use("/users", usersController);
 
 // Bakers
-const bakersController = require("./controllers/bakers_controller.js");
+const bakersController = require("./controllers/restaurants_controller.js");
 app.use("/bakers", bakersController);
 
 // Menus

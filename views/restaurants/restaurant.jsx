@@ -1,5 +1,5 @@
 const React = require("react");
-const Default = require("./layouts/default");
+const Default = require("../layouts/default");
 import {ListGroup, ListGroupItem, CardGroup} from 'react-bootstrap';
 import Card from "react-bootstrap/Card";
 

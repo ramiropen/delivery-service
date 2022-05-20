@@ -8,7 +8,7 @@ const { Schema } = mongoose;
 const menuSchema = new Schema({
   name: { type: String, required: true },
   address: { type: String, required: true },
-  city: { type: String, default: "https://loremflickr.com/286/180/food" },
+  city: { type: String, default: "https://loremflickr.com/300/300/restaurant" },
   state: { type: String, required: true },
   zip:{ type: Number, required: true }
 });

@@ -1,18 +1,14 @@
 // Import Mongoose
 const mongoose = require("mongoose");
 
-// Schema Constructor
-const { Schema } = mongoose;
-
-
 // restaurant Schema
 const restaurantSchema = new Schema({
     name: { type: String, required: true },
-    hasGluten: Boolean,
-    image: { type: String, default: "http://placehold.it/500x500.png" },
-    baker: {
-      type: Schema.Types.ObjectID,
-    },
+    address: { type: String, required: true },
+    city: { type: String, required: true },
+    state: { type: String, required: true },
+    zip: { type: Number, required: true },
+    cuisines: { type: String, required: true },
   });
 
   // Model
