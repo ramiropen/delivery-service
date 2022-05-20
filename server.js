@@ -38,25 +38,9 @@ app.get("/menu", (req, res) =>{
   res.render('menu')
 })
 // Restaurant
-app.get("/restaurant", (req, res) =>{
-  res.render('restaurant')
+app.get("/restaurants", (req, res) =>{
+  res.render('restaurants/restaurants')
 })
-// Breads
-const breadsController = require("./controllers/breads_controller.js");
-app.use("/breads", breadsController);
-
-// Users
-const usersController = require("./controllers/user_controller.js");
-app.use("/users", usersController);
-
-// Bakers
-const bakersController = require("./controllers/restaurants_controller.js");
-app.use("/bakers", bakersController);
-
-// Menus
-const menusController = require("./controllers/menus_controller.js");
-app.use("/menus", menusController);
-
 // 404 Page
 app.get("*", (req, res) => {
   res.send("404");

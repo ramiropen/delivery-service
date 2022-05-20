@@ -14,32 +14,33 @@ function edit_form (data) {
                         </div>
                         <div className="form-group col-sm-4">
                             <label htmlFor="pic">Address</label>
-                            <input className="form-control " id="pic" name="pic" value={data.place.pic}/>
+                            <input className="form-control " id="pic" name="pic" value={data.restaurant.address}/>
                         </div>
                     </div>
                     <div className="row">
                         <div className="form-group col-sm-4">
                             <label htmlFor="city">City</label>
-                            <input className="form-control" id="city" name="city" value={data.place.city}/>
+                            <input className="form-control" id="city" name="city" value={data.restaurant.city}/>
                         </div>
                         <div className="form-group col-sm-4">
                             <label htmlFor="state">State</label>
-                            <input className="form-control" id="state" name="state" value={data.place.state}/>
+                            <input className="form-control" id="state" name="state" value={data.restaurant.state}/>
+                        </div>
+                        <div className="form-group col-sm-4">
+                            <label htmlFor="state">Zip</label>
+                            <input className="form-control" id="zip" name="zip" value={data.restaurant.zip}/>
                         </div>
                     </div>
                     <div className="form-group">
                         <label htmlFor="cuisines">Cuisines</label>
-                        <input className="form-control" id="cuisines" name="cuisines" value={data.place.cuisines} required/>
+                        <input className="form-control" id="cuisines" name="cuisines" value={data.restaurant.cuisines} required/>
                     </div>
-                    <div className="form-group col-sm-4">
-                        <label htmlFor="founded">Founded</label>
-                        <input className="form-control" 
-                            id="founded" 
-                            name="founded" 
-                            value={data.place.founded} 
-                        />
+                    <div className="form-group">
+                        <label htmlFor="cuisines">Picture</label>
+                        <input className="form-control" id="picture" name="picture" value={data.restaurant.picture} required/>
                     </div>
-                    <input className="btn btn-primary" type="submit" value="Edit Place" />
+                    </div>
+                    <input className="btn btn-primary" type="submit" value="Edit Restaurant" />
                     </form>
             </main>
         </Def>

@@ -13,9 +13,9 @@ router.get('/', (req, res) => {
 })
  //Add New Place
 router.post('/', (req, res) => {
-    db.Place.create(req.body)
+    db.Restaraunt.create(req.body)
   .then( () => {
-    res.redirect('/places')
+    res.redirect('/restaurants')
   })
   .catch(err => {
     if (err && err.name == "ValidationError"){
@@ -24,7 +24,7 @@ router.post('/', (req, res) => {
         message += `${field} was ${err.errors[field].value}. `
         message += `${err.errors[field].message}`
       }
-      res.render('places/new', {message})
+      res.render('restaurants/new', {message})
     }
     else{
       res.render('error404')
@@ -57,6 +57,7 @@ router.put('/:id', (req, res) => {
       res.render('error404')
   })
 })
+
 // DELETE
 router.delete('/:id', (req, res) => {
   db.Place.findByIdAndDelete(req.params.id)
@@ -68,6 +69,7 @@ router.delete('/:id', (req, res) => {
       res.render('error404')
   })
 })
+
 // EDIT
 router.get('/:id/edit', (req, res) => {
   db.Restaurant.findById(req.params.id)
