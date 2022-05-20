@@ -30,8 +30,8 @@ app.get("/", (req, res) => {
   send("Welcome to an Awesome App about Breads");
 });
 // ROUTES FOR TESTING
-app.get("/login", (req, res) =>{
-  res.render('login')
+app.get("/new", (req, res) =>{
+  res.render('restaurants/new')
 })
 // MENU
 app.get("/menu", (req, res) =>{

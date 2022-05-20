@@ -1,5 +1,6 @@
-const React = require('react')
-const Def = require('../default')
+const React = require("react");
+const Default = require("../layouts/default");
+
 
 function new_form(data) {
     let message = ''
@@ -9,7 +10,7 @@ function new_form(data) {
             )
         }
     return (
-        <Def>
+        <Default>
             <main>
                 <h1>Add New Restaurant</h1>
                 {message}
@@ -45,7 +46,7 @@ function new_form(data) {
                     <input className="btn btn-primary" type="submit" value="Add Place" />
                     </form>
             </main>
-        </Def>
+        </Default>
     );
 }
 
