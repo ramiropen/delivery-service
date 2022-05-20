@@ -9,7 +9,7 @@ function Menu() {
   return (
     <Default>
     <head>
-      <link rel="stylesheet" href="/main.css" />
+    <link rel="stylesheet" href="/main.css" />
     </head>
     <h2>ADD FOOD TO THE CART</h2>
     <br />

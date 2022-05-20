@@ -16,8 +16,6 @@ users.get("/:id", (req, res) => {
     User.findById(req.params.id)
       .populate("baker")
       .then((foundUser) => {
-        // console.log(baker);
-        // console.log(foundBread);
         res.render("show", {
           bread: foundUser,
         });

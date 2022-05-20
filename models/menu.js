@@ -10,7 +10,7 @@ const menuSchema = new Schema({
   address: { type: String, required: true },
   city: { type: String, default: "https://loremflickr.com/286/180/food" },
   state: { type: String, required: true },
-  zip:{ type: Integer, required: true }
+  zip:{ type: Number, required: true }
 });
 
 // helper methods

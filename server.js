@@ -33,8 +33,13 @@ app.get("/", (req, res) => {
 app.get("/login", (req, res) =>{
   res.render('login')
 })
+// MENU
 app.get("/menu", (req, res) =>{
   res.render('menu')
+})
+// Restaurant
+app.get("/restaurant", (req, res) =>{
+  res.render('restaurant')
 })
 // Breads
 const breadsController = require("./controllers/breads_controller.js");
