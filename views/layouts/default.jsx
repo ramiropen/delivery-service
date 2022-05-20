@@ -20,6 +20,11 @@ function Default(html) {
         <header>
           <h1><a href="/breads">Delivery</a></h1>
         </header>
+        <div>
+        <footer id="footer"></footer>
+        <h2> About Us</h2>
+        
+      </div>
         <div className="container">
           {html.children}
         </div>
