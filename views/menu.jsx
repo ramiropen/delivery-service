@@ -8,9 +8,12 @@ import {Button} from 'react-bootstrap';
 function Menu() {
   return (
     <Default>
+    <head>
+      <link rel="stylesheet" href="/main.css" />
+    </head>
     <h2>ADD FOOD TO THE CART</h2>
     <br />
-    <Card border="secondary" style={{ width: '18rem' }}>
+    <Card style={{ width: '286px' }}>
     <Card.Img variant="top" src="https://loremflickr.com/286/180/food" />
       <Card.Body>
         <Card.Title><span style={{fontWeight: 'bold'}}>Buffalo Wings</span></Card.Title>
