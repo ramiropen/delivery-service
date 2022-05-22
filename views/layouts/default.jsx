@@ -21,18 +21,13 @@ function Default(html) {
               <a href="/">Home</a>
             </li>
             <li>
-              <a href="/places">Places</a>
-            </li>
-            <li>
-              <a href="/restaurants/new">Add A New Restaurant</a>
+              <a href="/new">Add A New Restaurant</a>
             </li>
           </ul>
         </nav>
         <div className="wrapper">
           <header>
-            <h1>
-              <a href="/breads">Delivery</a>
-            </h1>
+            Restaurants
           </header>
           <div>
             <footer id="footer"></footer>

@@ -1,9 +1,9 @@
 const React = require('react')
-const Def = require('../default')
+const Default = require('../layouts/default')
 
 function edit_form (data) {
     return (
-        <Def>
+        <Default>
             <main>
             <h1>Edit Restaurant</h1>
             <form method="POST" action={`/restaurants/${data.restaurant.id}?_method=PUT`}>
@@ -37,13 +37,13 @@ function edit_form (data) {
                     </div>
                     <div className="form-group">
                         <label htmlFor="cuisines">Picture</label>
-                        <input className="form-control" id="picture" name="picture" value={data.restaurant.picture} required/>
+                        <input className="form-control" id="image" name="image" value={data.restaurant.image} required/>
                     </div>
-                    </div>
+
                     <input className="btn btn-primary" type="submit" value="Edit Restaurant" />
                     </form>
             </main>
-        </Def>
+        </Default>
     );
 }
 

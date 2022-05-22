@@ -1,32 +1,32 @@
 const React = require('react')
-const Def = require('../default')
+const Default = require('../layouts/Default')
 
-function index (data) {
-    let restaurantsFormatted = data.restaurants.map((restaurant) =>{
-        return (
-            <div className="col-sm-6">
-                <h2>
-                    <a href={`/restaurant/${restaurant.id}`}>
-                        {restaurant.name}
-                    </a>
-                </h2>
-                <p className="text-center">{restaurant.cuisines}</p>
-                    <img className="img-thumbnail" src={place.pic} alt={place.name} />
-                <p className="text-center">
-                    Located in {place.city}, {place.state}
-                </p>
-            </div>
-        );
-    });
+function Index ({restaurants, title}) {
+    
     return (
-        <Def>
-            <main>
-                <h1>Place to Rant and Rave About</h1>
-                <div className="row">{placesFormatted}</div>
-            </main>
-        </Def>
-    );
+      <Default title={title}>
+        <h2>Index Page</h2>
+        <h3>Restaurants</h3>
+        <div className="newButton">
+          <a href="/new"><button>Add a new restaurant</button></a>
+        </div>
+         <p>I have {restaurants[0].name} restaurant!</p>
+        <ul>
+        {
+          restaurants.map((restaurant, index)=> {
+            return (
+              <li key={restaruant._id}>
+                <a href={`/restaurants/${bread._id}`}>
+                  {restaurant.name}
+                </a>
+              </li>
+            )
+          })
+        }
+        </ul>
 
+      </Default>
+    )
 }
 
-module.exports = index;
+module.exports = Index

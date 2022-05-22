@@ -24,11 +24,11 @@ app.use(express.static("public"));
 app.use(express.urlencoded({ extended: true }));
 app.use(methodOverride("_method"));
 
-// ROUTES
-app.get("/", (req, res) => {
-  res.
-  send("Welcome to an Awesome App about Breads");
-});
+// // ROUTES
+// app.get("/", (req, res) => {
+//   res.
+//   send("Welcome to an Awesome App about Breads");
+// });
 // ROUTES FOR TESTING
 app.get("/new", (req, res) =>{
   res.render('restaurants/new')
@@ -37,11 +37,18 @@ app.get("/new", (req, res) =>{
 app.get("/menu", (req, res) =>{
   res.render('menu')
 })
+// Restaurants Controller
+
+const restaurantsController = require('./controllers/restaurants_controller.js')
+app.use('/restaurants', restaurantsController)
+
 // Restaurant
-app.get("/restaurants", (req, res) =>{
-  res.render('restaurants/restaurants')
+app.get("/", (req, res) =>{
+  res.render('restaurants/index')
 })
 // 404 Page
+
+
 app.get("*", (req, res) => {
   res.send("404");
 });

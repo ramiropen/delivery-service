@@ -20,7 +20,7 @@ function new_form(data) {
                         <input className="form-control" id="name" name="name" required/>
                     </div>
                     <div className="form-group col-sm-4">
-                        <label for="founded">Address</label>
+                        <label htmlFor="address">Address</label>
                         <input className="form-control" id="address" name="address" />
                     </div>
                     <div className="form-group">
@@ -32,7 +32,7 @@ function new_form(data) {
                         <input className="form-control" id="state" name="state"/>
                     </div>
                     <div className="form-group">
-                        <label htmlFor="zip">Cuisines</label>
+                        <label htmlFor="zip">Zip</label>
                         <input className="form-control" id="zip" name="zip" required/>
                     </div>
                     <div className="form-group">
@@ -40,8 +40,8 @@ function new_form(data) {
                         <input className="form-control" id="cuisines" name="cuisines" required/>
                     </div>
                     <div className="form-group">
-                        <label htmlFor="pic">Place Picture</label>
-                        <input className="form-control" type="url" id="pic" name="pic"/>
+                        <label htmlFor="image">Restaurant Picture</label>
+                        <input className="form-control" type="url" id="image" name="image"/>
                     </div>
                     <input className="btn btn-primary" type="submit" value="Add Place" />
                     </form>
